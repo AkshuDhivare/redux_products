@@ -1,14 +1,14 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-function Api() {
+function Api(url) {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("https://fakestoreapi.com/products/");
+        const res = await axios.get(url);
         setLoading(false);
         setData(res.data);
       } catch (error) {
