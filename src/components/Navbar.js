@@ -36,7 +36,7 @@ function Navbar() {
               </li>
               <li>
                 <Link className="nav-link btn btn-outline-primary " to="cart">
-                  <strong>Cart {products.length}
+                  <strong>Cart {products.length}</strong>
                 </Link>
               </li>
             </ul>
